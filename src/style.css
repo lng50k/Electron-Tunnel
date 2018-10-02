@@ -1,0 +1,20 @@
+.btn.btn-primary .icon,
+.btn.btn-positive .icon,
+.btn.btn-negative .icon {
+  color: #eee;
+}
+
+.btn.btn-primary,
+.btn.btn-positive,
+.btn.btn-negative {
+  color: #eee;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  margin-left: 20px;
+}
+
+body {
+  background-color: #eee;
+}

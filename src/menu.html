@@ -1,0 +1,32 @@
+<div class="toolbar-actions not-draggable">
+  <button type="button" class="btn btn-large btn-primary new-tunnel">
+    <span class="icon icon-plus"></span> Add
+  </button>
+</div>
+
+<div class="window-content">
+  <ul class="list-group">
+    {% for t in tunnels %}
+    <li class="list-group-item tunnel">
+      <span class="name">{{ t.tunnelName }}</span>
+      <div class="btn-group pull-right actions">
+        <button data-tunnel-id="{{t.tunnelId}}" type="button" class="btn btn-default edit">
+          <span class="icon icon-pencil"></span>
+        </button>
+        <button data-tunnel-id="{{t.tunnelId}}" type="button"
+            {% if isOpen(t.tunnelId) %}
+             class="btn btn-positive toggle-state"
+            {% else %}
+             class="btn btn-negative toggle-state"
+            {% endif %}
+          >
+          <span class="icon icon-signal"></span>
+        </button>
+        <button  data-tunnel-id="{{t.tunnelId}}" type="button" class="btn btn-negative delete">
+          <span class="icon icon-trash"></span>
+        </button>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
