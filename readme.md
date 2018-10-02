@@ -116,11 +116,4 @@ npm test
 
 * App icons come from [Entypo icon set](www.entypo.com) by [Daniel Bruce](http://www.danielbruce.se/)
 
-# License
-
-The MIT License (MIT)
-
-Copyright (c) 2015 Andrea Parodi
-
-
 
